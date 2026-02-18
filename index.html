@@ -1,14 +1,40 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <link href="/style.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Theme Toggle Demo</p>
+        <h1>Hello, world!</h1>
+        <p class="lede">Switch between light and dark modes. Your preference is saved.</p>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">
+        <span class="toggle-icon" aria-hidden="true"></span>
+        <span class="toggle-label">Light mode</span>
+      </button>
+    </header>
+
+    <section class="card-grid">
+      <article class="card">
+        <h2>Fast</h2>
+        <p>Minimal HTML, CSS variables, and a tiny script.</p>
+      </article>
+      <article class="card">
+        <h2>Accessible</h2>
+        <p>Keyboard-friendly toggle with ARIA state.</p>
+      </article>
+      <article class="card">
+        <h2>Persistent</h2>
+        <p>Your choice is stored and restored automatically.</p>
+      </article>
+    </section>
+  </main>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
