@@ -3,104 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ohtani Timebox</title>
-  <link href="./style.css" rel="stylesheet" />
+  <title>Redirecting…</title>
+  <link rel="canonical" href="https://product-builder-test-844.pages.dev/" />
+  <meta http-equiv="refresh" content="0; url=https://product-builder-test-844.pages.dev/" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      background: #0f1115;
+      color: #f3f5f7;
+      text-align: center;
+      padding: 24px;
+    }
+    a { color: #6bb7ff; }
+  </style>
 </head>
 <body>
-  <main class="app">
-    <header class="hero">
-      <div>
-        <p class="eyebrow">Timeboxing</p>
-        <h1>Ohtani Focus</h1>
-        <p class="lede">Plan your day in focused blocks and track the timer.</p>
-      </div>
-      <button id="theme-toggle" class="chip" type="button" aria-pressed="false">Light</button>
-    </header>
-
-    <section class="panel">
-      <div class="panel-header">
-        <h2>Today’s Blocks</h2>
-        <button id="add-block" class="btn">Add Block</button>
-      </div>
-      <ul id="block-list" class="block-list"></ul>
-    </section>
-
-    <section class="panel">
-      <div class="panel-header">
-        <h2>Active Timer</h2>
-        <div class="timer" id="timer">00:00</div>
-      </div>
-      <div class="timer-actions">
-        <button id="start" class="btn primary">Start</button>
-        <button id="pause" class="btn">Pause</button>
-        <button id="reset" class="btn ghost">Reset</button>
-      </div>
-    </section>
-
-    <section class="panel contact">
-      <div class="panel-header">
-        <h2>제휴 문의</h2>
-        <span class="hint">1~2영업일 내 회신</span>
-      </div>
-      <form class="contact-form" action="https://formspree.io/f/mreallpw" method="POST">
-        <input type="hidden" name="_subject" value="New partnership inquiry" />
-        <label>
-          이름
-          <input type="text" name="name" placeholder="홍길동" required />
-        </label>
-        <label>
-          이메일
-          <input type="email" name="email" placeholder="name@example.com" required />
-        </label>
-        <label>
-          회사명
-          <input type="text" name="company" placeholder="회사명" required />
-        </label>
-        <label>
-          문의 내용
-          <textarea name="message" rows="5" placeholder="제휴 목적과 요청 사항을 적어주세요." required></textarea>
-        </label>
-        <button class="btn primary" type="submit">문의 보내기</button>
-      </form>
-    </section>
-
-    <section class="panel">
-      <div class="panel-header">
-        <h2>댓글</h2>
-        <span class="hint">Disqus</span>
-      </div>
-      <div id="disqus_thread"></div>
-      <script>
-        /*
-        var disqus_config = function () {
-          this.page.url = PAGE_URL;
-          this.page.identifier = PAGE_IDENTIFIER;
-        };
-        */
-        (function() {
-          var d = document, s = d.createElement('script');
-          s.src = 'https://ohtani.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      </script>
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </section>
+  <main>
+    <h1>Redirecting…</h1>
+    <p>This site has moved to <a href="https://product-builder-test-844.pages.dev/">https://product-builder-test-844.pages.dev/</a></p>
   </main>
-
-  <template id="block-template">
-    <li class="block">
-      <div>
-        <input class="block-title" type="text" placeholder="Block title" />
-        <div class="block-meta">
-          <input class="block-minutes" type="number" min="5" step="5" value="25" />
-          <span>minutes</span>
-        </div>
-      </div>
-      <button class="btn ghost remove">Remove</button>
-    </li>
-  </template>
-
-  <script defer type="text/javascript" src="./main.js"></script>
+  <script>
+    window.location.replace("https://product-builder-test-844.pages.dev/");
+  </script>
 </body>
 </html>
