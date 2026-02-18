@@ -34,6 +34,35 @@
         <p>Your choice is stored and restored automatically.</p>
       </article>
     </section>
+
+    <section class="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">Partnership</p>
+        <h2>제휴 문의</h2>
+        <p class="lede">간단한 정보를 남겨주시면 1~2영업일 내에 답변드릴게요.</p>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/mreallpw" method="POST">
+        <input type="hidden" name="_subject" value="New partnership inquiry" />
+        <label>
+          이름
+          <input type="text" name="name" placeholder="홍길동" required />
+        </label>
+        <label>
+          이메일
+          <input type="email" name="email" placeholder="name@example.com" required />
+        </label>
+        <label>
+          회사명
+          <input type="text" name="company" placeholder="회사명" required />
+        </label>
+        <label>
+          문의 내용
+          <textarea name="message" rows="5" placeholder="제휴 목적과 요청 사항을 적어주세요." required></textarea>
+        </label>
+        <button class="submit-btn" type="submit">문의 보내기</button>
+        <p class="form-hint">보내기 버튼을 누르면 Formspree로 전송됩니다.</p>
+      </form>
+    </section>
   </main>
   <script defer type="text/javascript" src="./main.js"></script>
 </body>
